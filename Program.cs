@@ -32,10 +32,7 @@ namespace Rap_Finands
                 GemTrans(konti[0], "Hævet til Petuniaer", -50);
 
                 gem();
-            }
-            else
-            {
-            }
+            } // overflødigt med else 
             dos_start();
 
         }
