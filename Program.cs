@@ -12,7 +12,6 @@ namespace Rap_Finands
     **/
     class Program
     {
-        public static string reginummer = "4242";
         public static string datafil = "bank.json"; //Her ligger alt data i
         public static List<Konto> konti;
         //Overflødig variabel fjernet
