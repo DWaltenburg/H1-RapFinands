@@ -91,8 +91,7 @@ namespace Rap_Finands
             if (tal < 1 || tal > konti.Count)
             {
                 Console.WriteLine("Ugyldigt valg");
-                Console.Clear();
-                return null;
+                return dos_findKonto(); // Det går ikke at returnere null når der forventes et Konto objekt (Specielt uden at dokumentere muligheden)
             }
             return konti[tal - 1];
         }
