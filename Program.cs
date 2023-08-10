@@ -15,7 +15,7 @@ namespace Rap_Finands
         public static string reginummer = "4242";
         public static string datafil = "bank.json"; //Her ligger alt data i
         public static List<Konto> konti;
-        public static float belob;
+        //Overflødig variabel fjernet
         static void Main(string[] args)
         {
             Console.WriteLine("Henter alt kontodata");
