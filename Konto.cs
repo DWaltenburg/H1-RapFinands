@@ -14,7 +14,7 @@ namespace Rap_Finands
             registreringsnr = "4242"; //Sæt registreringsnummer på kontoen! //flyttet variabeldeklaration
             kontonr = lavEtKontoNummer(); //Lav et nyt (tilfældigt shh!) kontonummer
         }
-
+        //Flyttet kontonummergenerering til konto klassen
         /*
         fed metode til at lave helt nye kontonumre ~Konrad
         */
