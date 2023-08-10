@@ -120,21 +120,6 @@ namespace Rap_Finands
             return new Konto();
         }
 
-        /*
-        fed metode til at lave helt nye kontonumre ~Konrad
-        */
-        public static string lavEtKontoNummer()
-        {
-            Random tilfael = new Random();
-            string nr = tilfael.Next(1, 9).ToString();
-            for (var i = 1; i <= 9; i++)
-            {
-                nr = nr + tilfael.Next(0, 9).ToString();
-                if (i == 3) nr = nr + " ";
-                if (i == 6) nr = nr + " ";
-            }
-            return nr;
-        }
         static void dos_udskrivKonti()
         {
             Console.WriteLine("================");

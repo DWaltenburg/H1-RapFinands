@@ -12,7 +12,23 @@ namespace Rap_Finands
         {
             transaktioner = new List<Transaktion>();
             registreringsnr = "4242"; //Sæt registreringsnummer på kontoen! //flyttet variabeldeklaration
-            kontonr = Program.lavEtKontoNummer(); //Lav et nyt (tilfældigt shh!) kontonummer
+            kontonr = lavEtKontoNummer(); //Lav et nyt (tilfældigt shh!) kontonummer
+        }
+
+        /*
+        fed metode til at lave helt nye kontonumre ~Konrad
+        */
+        private static string lavEtKontoNummer()
+        {
+            Random tilfael = new Random();
+            string nr = tilfael.Next(1, 9).ToString();
+            for (var i = 1; i <= 9; i++)
+            {
+                nr = nr + tilfael.Next(0, 9).ToString();
+                if (i == 3) nr = nr + " ";
+                if (i == 6) nr = nr + " ";
+            }
+            return nr;
         }
 
     }
